@@ -1,0 +1,30 @@
+server:
+  port: 8080
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+  redis:
+    host: localhost
+    password:
+    port: 6379
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    enabled: true
+    encoding: UTF-8
+    mode: HTML5
+log:
+  dir: D:\\choice
+file:
+  dir: D:\\filedir
+next:
+  host: localhost
+  port: 8088
+#next:
+#  host: yun.pre.choicesaas.cn
+#  port: 12002
+choice:
+  gateway: http://gateway.dev.choicesaas.cn/
+oauth:
+  appid: 10010000
+  secret: dd2df3ef49e07797977b563c6d6fcf43
